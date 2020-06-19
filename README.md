@@ -9,6 +9,7 @@ a cpprestsdk port to mingw32
 2. openssl
 3. zlib
 4. websocketpp, which you can extract the project to cpprestsdk/Release/libs/websocketpp.
+5. msvcrNN.dll, you should write manifest files to tell winsxs solve dlls, and rename for your binaries.
 ## boost.rpm and g++ version map
 1. boost.1.54 -- mingw4.9x
 2. boost.1.66 -- mingw7x
