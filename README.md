@@ -1,5 +1,7 @@
 # cpprestsdk4mingw
 a cpprestsdk port to mingw32
+## license:
+1. the origin cpprestsdk.zip is licensed by Microsoft Corporation.
 ## usages:
 1. replace cpprestsdk/Release with this git.
 2. modify your winnt.h of mingw platform, make C_ASSERT work correctly.
