@@ -1,0 +1,7 @@
+set SYSROOT_CMK=d:/devel/platform/mingw/73_x86/sys-root/mingw
+set BOOST_CMK=-DBOOST_INCLUDEDIR=%SYSROOT_CMK%/include
+set OPENSSL_CMK=-DOPENSSL_ROOT_DIR=%SYSROOT_CMK% -DOPENSSL_INCLUDE_DIR=%SYSROOT_CMK%/include -DOPENSSL_SSL_LIBRARY=%SYSROOT_CMK%/lib/llibssl.a -DOPENSSL_CRYPTO_LIBRARY=%SYSROOT_CMK%/lib/libcrypto.a
+set ZLIB_CMK=-DZLIB_INCLUDE_DIR=%SYSROOT_CMK%/include -DZLIB_LIBRARY=%SYSROOT_CMK%/lib/libz.a
+set CMAKE_EXE="d:\GreenFiles\cmake\bin\cmake"
+set PROJ_CMK="CodeBlocks - MinGW Makefiles"
+%CMAKE_EXE% .. %BOOST_CMK% %OPENSSL_CMK% %ZLIB_CMK% -G %PROJ_CMK%
