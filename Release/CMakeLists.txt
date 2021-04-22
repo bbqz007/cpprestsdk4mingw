@@ -37,7 +37,7 @@ message("")
 message(" E^______________O_______________^E ")
 set(Z_PORT_MINGW "www.cnblogs.com/bbqzsl")
 add_definitions(-DZ_PORT_MINGW="github.com/bbqz007")
-set(Z_PROT_MINGW_MSVCR -lmsvcr90)
+set(Z_PROT_MINGW_MSVCR ) #use msvcrt_locale.dll
 if(NOT MINGW AND Z_PORT_MINGW)
   set(WERROR ON CACHE BOOL "Treat Warnings as Errors.")
 endif()
