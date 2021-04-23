@@ -6,6 +6,7 @@ a cpprestsdk port to mingw32
 1. replace cpprestsdk/Release with this git.
 2. modify your winnt.h of mingw platform, make C_ASSERT work correctly. ```#if defined(_WIN32) || defined(__mingw32__)```
 4. if any template typename U in boost headers confilt with macro U in cpprest, change the typename U in boost headers.```replace U with UU```
+5. change the ```Release\src\CMakeFiles\cpprest.dir\linklibs.rsp```, add the path of msvcrt_locale.dll
 ## dll:
 1. define Z_PORT_MINGW
 2. define CPPREST_FORCE_HTTP_LISTENER_ASIO
