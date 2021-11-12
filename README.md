@@ -23,3 +23,13 @@ a cpprestsdk port to mingw32
 2. boost.1.66 -- mingw7x
 3. boost.1.69 -- mingw8x or mingw9x
 4. boost.1.60 -- mingw6x
+## mingw version
+| |ver|vendor|default|other choice|
+|:--|:--|:--|:--|:--|
+ |1. | 4 | tdm | dw2 | |
+ |2. | 5 | w64 | sjlj | dw2|
+ |3. | 6 | w64 | sjlj |  dw2|
+ |4. | 7 | w64 | sjlj | dw2| 
+ |5. | 8 | w64 | sjlj | dw2| 
+ |6. | 9 | tdm | dw2 |  |
+ |7. | 10| tdm | dw2 |  |
